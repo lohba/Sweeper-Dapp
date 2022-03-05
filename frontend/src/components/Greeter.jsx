@@ -9,9 +9,9 @@ export default function Greeter() {
   return (
     <div className="mt-2">
       <div>Greeting from contract: </div> <h3>{greeting}</h3>
-      <InputField value={newGreeting} placeholder="new greeting" onChange={(e) => setNewGreeting(e.target.value)} />
+      <InputField value={newGreeting} placeholder="Search for NFT Collection" onChange={(e) => setNewGreeting(e.target.value)} />
       <br />
-      <Button onClick={() => updateGreeting(newGreeting)}>Update Greeting</Button>
+      <Button onClick={() => updateGreeting(newGreeting)}>Search</Button>
     </div>
   );
 }
